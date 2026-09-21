@@ -1,5 +1,12 @@
 import 'habilidades.dart';
 
+class Hijos {
+  int edad;
+  String nombre;
+
+  Hijos({required this.edad, required this.nombre});
+}
+
 class Personas with Profesion {
   String _name;
   int _phone;
