@@ -2,6 +2,14 @@ import 'exceptionClientes.dart';
 import 'paseante.dart';
 import 'personas.dart';
 
+class Mascota {
+  String name;
+
+  Mascota({
+    required this.name
+  });
+}
+
 class Clientes extends Personas implements Andar {
   String nameUser;
   String _password;
@@ -15,14 +23,8 @@ class Clientes extends Personas implements Andar {
     }
   }
 
-  Clientes(
-    String _name,
-    String _genero,
-    int _age,
-    int _phone,
-    String nameUser,
-    String password,
-  ) : this._password = password,
+  Clientes(String _name, String _genero, int _age, int _phone, String nameUser, String password)
+    : this._password = password,
       this.nameUser = nameUser,
       super(_name, _genero, _age, _phone) {
     this.nameUser = nameUser;
