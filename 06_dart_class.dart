@@ -12,6 +12,12 @@ void main() {
   print(persona2.age);
 }
 
+class Perrito {
+  String nombre;
+
+  Perrito({required this.nombre});
+}
+
 class Persona {
   // Definimos los atributos
   String name;
