@@ -1,4 +1,5 @@
 class Persona {
+  int num_hijos;
   String name;
   int _edad;
   bool? trabaja;
@@ -23,32 +24,31 @@ class Persona {
 
   Persona(
     this._edad, {
+    required this.num_hijos,
     required this.name,
     required this.sexoMasculino,
     required this.trabaja,
     this.deporte,
   });
 
-  void crear() => print(
-    'Me llamo $name, tengo $_edad años y estoy ${sexoMasculino ? 'vivo' : 'viva'} :O',
-  );
-  void comun() =>
-      print('${trabaja! ? 'Trabajo' : 'No trabajo'} y tengo $_edad');
+  void crear() =>
+      print('Me llamo $name, tengo $_edad años y estoy ${sexoMasculino ? 'vivo' : 'viva'} :O');
+  void comun() => print('${trabaja! ? 'Trabajo' : 'No trabajo'} y tengo $_edad');
 
   Persona.atleta(
     this._edad, {
+    required this.num_hijos,
     required this.name,
     required this.sexoMasculino,
     required this.trabaja,
     required this.deporte,
   });
 
-  void atleta() => print(
-    'Soy $name ${trabaja! ? 'trabajo' : 'no trabajo'} y practico $deporte',
-  );
+  void atleta() => print('Soy $name ${trabaja! ? 'trabajo' : 'no trabajo'} y practico $deporte');
 
   Persona.emprendedor(
     this._edad, {
+      required this.num_hijos,
     required this.name,
     required this.sexoMasculino,
     this.trabaja,

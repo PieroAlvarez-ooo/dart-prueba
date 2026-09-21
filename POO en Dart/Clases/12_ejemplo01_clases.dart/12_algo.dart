@@ -3,6 +3,7 @@ import '12_clases.dart';
 void main() {
   Persona persona1 = new Persona(
     19,
+    num_hijos: 2,
     name: 'Piero',
     trabaja: false,
     sexoMasculino: true,
@@ -21,6 +22,7 @@ void main() {
   Persona persona2 = new Persona.atleta(
     19,
     name: 'Mayumy',
+    num_hijos: 20,
     trabaja: true,
     deporte: 'voley',
     sexoMasculino: false,
@@ -32,6 +34,7 @@ void main() {
 
   Persona persona3 = new Persona.emprendedor(
     20,
+    num_hijos: 2,
     name: 'Daniel',
     sexoMasculino: true,
     trabaja: true,
